@@ -1,6 +1,8 @@
+package Ejercicio3;
+
 class PayPal extends PasarelaPago {
     public PayPal() {
-        super("PayPal Digital Wallet");
+        super("Bienvenido a PayPal");
     }
 
     @Override

@@ -1,3 +1,5 @@
+package Ejercicio3;
+
 class Criptomoneda extends PasarelaPago {
     public Criptomoneda() {
         super("Blockchain (BTC/ETH)");

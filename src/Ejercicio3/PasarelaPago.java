@@ -1,12 +1,14 @@
+package Ejercicio3;
+
 interface Validable {
-        boolean validarConexion();
-    }
+    boolean validarConexion();
+}
 
-    interface Procesable {
-        void procesarPago(double monto);
-    }
+interface Procesable {
+    void procesarPago(double monto);
+}
 
-    abstract class PasarelaPago implements Procesable, Validable {
+abstract class PasarelaPago implements Procesable, Validable {
     protected  String nombrePlataforma;
 
     public PasarelaPago(String nombrePlataforma) {
@@ -17,5 +19,4 @@ interface Validable {
         IO.println("\n--- Iniciando Pago Via: " + nombrePlataforma + " ---");
     }
 }
-
 

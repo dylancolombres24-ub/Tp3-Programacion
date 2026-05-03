@@ -1,3 +1,5 @@
+package Ejercicio3;
+
 import java.util.ArrayList;
 
 public class SistemaEcommercePro {
@@ -15,3 +17,4 @@ public class SistemaEcommercePro {
         }
     }
 }
+

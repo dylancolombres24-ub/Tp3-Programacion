@@ -1,3 +1,5 @@
+package Ejercicio3;
+
 class TarjetaCredito extends PasarelaPago {
     public TarjetaCredito() {
         super("Red Bancaria Visa/Mastercard");

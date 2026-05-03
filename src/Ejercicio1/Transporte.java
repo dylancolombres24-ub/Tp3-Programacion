@@ -3,7 +3,7 @@ package Ejercicio1;
 import java.util.ArrayList;
 import java.util.List;
 
-class Main {
+class Transporte {
     public static void main(String[] args){
         List<Vehiculo> flota = new ArrayList<>();
 

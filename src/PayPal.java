@@ -1,9 +1,18 @@
-class PayPal implements MetodoPago {
+class PayPal extends PasarelaPago {
+    public PayPal() {
+        super("PayPal Digital Wallet");
+    }
+
     @Override
-    public void procesarPago(double monto){
-        IO.println("\nApi PayPal");
-        IO.println("-> Redirigiendo al usuario a la pagina de PayPal...");
-        IO.println("-> Token de autorizacion...");
-        IO.println("Pago de $" + monto + " Por PayPal aprobado.");
+    public boolean validarConexion() {
+        IO.println("[Validacion] Verificando token de sesion y correo del usuario...");
+        return true;
+    }
+
+    @Override
+    public void procesarPago(double monto) {
+        mostrarCabecera();
+        if (validarConexion());
+        IO.println("Pago de $" + monto + " aprobado por PayPal.");
     }
 }
